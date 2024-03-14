@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Louvelle,s Website</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cormorant:wght@300&family=Courgette&family=Lora:ital@0;1&family=Merriweather&family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="contactstyle.css">
+        
+        
+    </head>
+    <body>
+        
+        <div class="tops">
+        <nav>
+            <div><img class="logo" src ="images/download.png" alt= "logo"></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">About Me</a></li>
+                <li><a href="courses.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="wrap">
+        <div class="contact-container">
+            <h2>Send me a message</h2>
+            <p>
+                Feel free to get in touch with me with anything related to Web Development opportunities or you can just say hi. I will get back to you as soon as possible.
+            </p>
+            <form action="mailto:louvellemorris@gmail.com" id="form">
+                <div class="wrapper">
+                    <input type="text" placeholder="Your name"/>
+                    <div class="gradient-bg"></div>
+                </div>
+                <div class="wrapper">
+                    <input type="email" placeholder="Email address" />
+                    <div class="gradient-bg"></div>
+                </div>
+                <div class="wrapper">
+                    <input type="text" placeholder="Subject">
+                    <div class="gradient-bg"></div>
+                </div>
+                <div class="wrapper wrapper-big">
+                    <textarea placeholder="Message"></textarea>
+                    <div class="gradient-bg"></div>
+                </div>
+                <button>Send</button>
+            </form>
+        </div>
+        
+          
+    </div>
+    <div class="bottom-container">
+        <a class="footer-link" href="https://www.linkedin.com/in/louvelle-morris-120112212/">LinkedIn</a>
+        <a class="footer-link" href="https://github.com/LoneWolfLou">Github</a>
+        <p class="copyright">© 2023 Louvelle Morris.</p>
+        </div>
+    <script>
+        const form = document.getElementById('form');
+const container = document.querySelector('.contact-container');
+
+form.addEventListener('submit', (e) => {
+e.preventDefault();
+container.innerHTML = '<p>Thanks for your message. <br /> I\'ll get back to you soon. 😃</p>';
+});
+
+// SOCIAL PANEL JS
+const floating_btn = document.querySelector('.floating-btn');
+const close_btn = document.querySelector('.close-btn');
+const social_panel_container = document.querySelector('.social-panel-container');
+
+floating_btn.addEventListener('click', () => {
+social_panel_container.classList.toggle('visible')
+});
+
+close_btn.addEventListener('click', () => {
+social_panel_container.classList.remove('visible')
+});
+    </script>
+    </body>
+</html>

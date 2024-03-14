@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Louvelle,s Website</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="about.css">
+        
+    </head>
+    <body>
+        
+            <nav>
+                <div><img class="logo" src ="images/download.png" alt= "logo"></div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="courses.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        
+        <!-- Design on Dribbble: https://dribbble.com/shots/3967265-FAQ -->
+<h1>About Me</h1>
+<div><img class="propic" src ="images/IMG_20210423_123822-modified.png" alt= "logo"></div>
+<div class="faqs-container">
+	<div class="faq active">
+		<h3 class="faq-title">
+			Get to know me!
+		</h3>
+		<p class="faq-text">
+			Hard working, prompt, diligent individual who has more than 14 years work experience in a variety of fields and enviroments, adaptable and always willing to learn.
+             I aspire to become knowledgable and confident in creating programmes that are sustainable, creative and solve real world problems
+		</p>
+		<button class="faq-toggle">
+			<i class="fas fa-chevron-down"></i>
+			<i class="fas fa-times"></i>
+		</button>
+	</div>
+	
+	<div class="faq">
+		<h3 class="faq-title">
+			Strengths
+		</h3>
+		<p class="faq-text">
+			Being aware of one's weaknesses is as important as knowing your strengths as it highlights parts of yourself you can work on:<br>
+            Some of my strengths below:<br> A problem solver, Team player - work well with others, Always willing to help where i can, Honest and trustworthy, Good communication and listening skills
+		</p>
+		<button class="faq-toggle">
+			<i class="fas fa-chevron-down"></i>
+			<i class="fas fa-times"></i>
+		</button>
+	</div>
+
+    <div class="faq">
+		<h3 class="faq-title">
+			Weaknesses
+		</h3>
+		<p class="faq-text">
+			Parts of me I can work on:<br>
+            People pleasing, taking on too much, Admit when i need help or asking a question, impatiant
+		</p>
+		<button class="faq-toggle">
+			<i class="fas fa-chevron-down"></i>
+			<i class="fas fa-times"></i>
+		</button>
+	</div>
+	
+	<div class="faq">
+		<h3 class="faq-title">
+			Things that interest me
+		</h3>
+		<p class="faq-text">
+			Time and experience brings with it growth and the chance to try new things, outgrow the old. As such my interests are just the same, there are the staple enjoyments such as a good book,
+brand new interests like creating new projects as a developer,
+building something like a website that takes algorythims to get a certain outcome based on data or a fun site that displays a new language or framework I have been learning/practicing with,
+is a new found interest and one i very much enjoy.
+		</p>
+		<button class="faq-toggle">
+			<i class="fas fa-chevron-down"></i>
+			<i class="fas fa-times"></i>
+		</button>
+	</div>
+	
+	<div class="faq">
+		<h3 class="faq-title">
+			Likes and dislikes
+		</h3>
+		<p class="faq-text">
+			Good food, that first cup of black coffee in the morning, cold, rainy days, an insightful open-minded conversation with someone are just some of the things i like.
+Not a fan of summer & hot days, shallow, superficial people & wasted potential are some of the things i dislike
+		</p>
+		<button class="faq-toggle">
+			<i class="fas fa-chevron-down"></i>
+			<i class="fas fa-times"></i>
+		</button>
+	</div>
+	
+	<div class="faq">
+		<h3 class="faq-title">
+			How do those around me percieve me
+		</h3>
+		<p class="faq-text">
+			I'd like to think that the people around me see me as someone who is honest, helpful, 
+            a free thinker and one who does not allow for the stigma and status quo of society determine my view or opinion of who one is or what one is.
+		</p>
+		<button class="faq-toggle">
+			<i class="fas fa-chevron-down"></i>
+			<i class="fas fa-times"></i>
+		</button>
+	</div>
+</div>
+<div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/in/louvelle-morris-120112212/">LinkedIn</a>
+    <a class="footer-link" href="https://github.com/LoneWolfLou">Github</a>
+    <p class="copyright">© 2023 Louvelle Morris.</p>
+    </div>
+<script>
+    const toggles = document.querySelectorAll('.faq-toggle');
+
+toggles.forEach(toggle => {
+	toggle.addEventListener('click', () => {
+		toggle.parentNode.classList.toggle('active');
+	});
+});
+
+// SOCIAL PANEL JS
+const floating_btn = document.querySelector('.floating-btn');
+const close_btn = document.querySelector('.close-btn');
+const social_panel_container = document.querySelector('.social-panel-container');
+
+floating_btn.addEventListener('click', () => {
+	social_panel_container.classList.toggle('visible')
+});
+
+close_btn.addEventListener('click', () => {
+	social_panel_container.classList.remove('visible')
+});
+</script>
+
+        
+        
+    </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Louvelle's Website</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cormorant:wght@300&family=Courgette&family=Lora:ital@0;1&family=Merriweather&family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="course.css">
+    </head>
+    <body>
+        <script>
+            // INSERT JS HERE
+
+
+// SOCIAL PANEL JS
+const floating_btn = document.querySelector('.floating-btn');
+const close_btn = document.querySelector('.close-btn');
+const social_panel_container = document.querySelector('.social-panel-container');
+
+floating_btn.addEventListener('click', () => {
+	social_panel_container.classList.toggle('visible')
+});
+
+close_btn.addEventListener('click', () => {
+	social_panel_container.classList.remove('visible')
+});
+        </script>
+        <div class="top">
+        <nav>
+            <div><img class="logo" src ="images/download.png" alt= "logo"></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="wrp">
+        <!-- Dribbble design:  https://dribbble.com/shots/2421209-Blog-Post -->
+<div class="blog-container">
+	<div class="blog-header">
+		<h1>
+			<strong>Module six:</strong><br/>
+			Business Communication Skills
+		</h1>
+		
+		<div class="author">
+			<img src="images/IMG_20210423_123822-modified.png" alt="">
+			<p>Louvelle <strong>Morris</strong></p>
+		</div>
+	</div>
+	<div class="blog-content">
+		<div class="blog-text">
+			<p>To communicate effectively, you need to be good at active listening, message delivery and asking for feedback. These are some of our favorite techniques for taking communication skills to the next level.</p>
+			<p>How are you standing? Is your body language open and inviting? Are you making lots of eye contact or looking at a screen?</p>
+			<p>Before any communication, whether it’s a one-on-one meeting or major speech, prepare yourself. You might spend a few minutes taking deep breaths before a presentation or review a meeting agenda before a huddle.</p>
+			<p>Communicating information in writing, drafting reports, sending messages and reviewing written documents are everyday business tasks that rely on strong writing skills.</p>
+			<p>Effective business communication relies on regular feedback and input. Constructive feedback encourages reflective thinking and improvement. Successful professionals apply feedback from their superiors to improve performance and achieve objectives. </p>
+		</div>
+		<div class="blog-info">
+			<p>
+				Completed on: 
+				<strong>08 Feb 2024</strong>
+			</p>
+			<button>
+				<i class="fas fa-heart"></i>
+			</button>
+		</div>
+	</div>
+</div>
+
+
+        
+    </div>
+</div>
+<div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/in/louvelle-morris-120112212/">LinkedIn</a>
+    <a class="footer-link" href="https://github.com/LoneWolfLou">Github</a>
+    <p class="copyright">© 2023 Louvelle Morris.</p>
+    </div>
+    </body>
+</html>
