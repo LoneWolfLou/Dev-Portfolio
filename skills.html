@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Louvelle's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="skillstyle.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cormorant:wght@300&family=Courgette&family=Lora:ital@0;1&family=Merriweather&family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    
+    <nav>
+        <div><img class="logo" src ="images/download.png" alt= "logo"></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">About Me</a></li>
+            <li><a href="courses.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+ <!-- skills section start -->
+ <section class="skills" id="skills">
+    <div class="max-width">
+        <h2 class="title">My skills</h2>
+        <div class="skills-content">
+            <div class="column left">
+                <div class="text">My creative skills & experiences.</div>
+                <p>Since beginning my journey as a developer nearly 2 years ago, I’ve done a bootcamp, learnership and online courses on various aspects of development.
+                    <br><br>
+                    I create successful responsive websites that are fast, easy to use, and built with best practices. The main area of my expertise is front-end development, HTML, CSS, JS, building small and medium web apps,  features, animations, and coding interactive layouts.
+                    <br><br>
+                    I also have full-stack developer experience with backend knowledge on various frameworks and libraries.
+                    <br> 
+                    Visit my<a href="https://www.linkedin.com/in/louvelle-morris-120112212/" target="-blank" id="link">LinkedIn</a>for more details,<a href="contact.html" id="link">contact</a>me.
+
+                </p>
+                <a href="images/Louvelle_CV.pdf">Download CV</a>
+            </div>
+            <div class="column right">
+                <div class="bars">
+                    <div class="info">
+                        <span>HTML</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="line html"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>CSS</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="line css"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>JavaScript</span>
+                        <span>50%</span>
+                    </div>
+                     <div class="line js"></div>
+                </div>
+            <div class="bars">
+                    <div class="info">
+                        <span>Python</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="line php"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>Mysql</span>
+                        <span>65%</span>
+                    </div>
+                    <div class="line mysql"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>PHP</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="line wordpress"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/in/louvelle-morris-120112212/">LinkedIn</a>
+    <a class="footer-link" href="https://github.com/LoneWolfLou">Github</a>
+    <p class="copyright">© 2023 Louvelle Morris.</p>
+    </div>
+    <script>
+        $(document).ready(function(){
+        $(window).scroll(function(){
+            // sticky navbar on scroll script
+            if(this.scrollY > 20){
+                $('.navbar').addClass("sticky");
+            }else{
+                $('.navbar').removeClass("sticky");
+            }
+            
+            // scroll-up button show/hide script
+            if(this.scrollY > 500){
+                $('.scroll-up-btn').addClass("show");
+            }else{
+                $('.scroll-up-btn').removeClass("show");
+            }
+        });
+    
+        // slide-up script
+        $('.scroll-up-btn').click(function(){
+            $('html').animate({scrollTop: 0});
+            // removing smooth scroll on slide-up button click
+            $('html').css("scrollBehavior", "auto");
+        });
+    
+        $('.navbar .menu li a').click(function(){
+            // applying again smooth scroll on menu items click
+            $('html').css("scrollBehavior", "smooth");
+        });
+    
+        // toggle menu/navbar script
+        $('.menu-btn').click(function(){
+            $('.navbar .menu').toggleClass("active");
+            $('.menu-btn i').toggleClass("active");
+        });
+    
+        // typing text animation script
+        var typed = new Typed(".typing", {
+            strings: ["Front end developer","Fresher","Technician", "Blogger", "Designer", "Freelancer","Manager"],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true
+        });
+        var typed = new Typed(".typing-3", {
+            strings: ["Connect with me on :)"],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true
+        });
+    
+        var typed = new Typed(".typing-2", {
+            strings: ["Front end developer","Fresher" ,"Technician", "Blogger", "Designer", "Freelancer","Manager"],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true
+        });
+    
+        // owl carousel script
+        $('.carousel').owlCarousel({
+            margin: 20,
+            loop: true,
+            autoplay: true,
+            autoplayTimeOut: 2000,
+            autoplayHoverPause: true,
+            responsive: {
+                0:{
+                    items: 1,
+                    nav: false
+                },
+                600:{
+                    items: 2,
+                    nav: false
+                },
+                1000:{
+                    items: 3,
+                    nav: false
+                }
+            }
+        });
+    });
+    </script>
+</body>
+</html>

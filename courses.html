@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Louvelle,s Website</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cormorant:wght@300&family=Courgette&family=Lora:ital@0;1&family=Merriweather&family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="course_style.css">
+    </head>
+    <body>
+        <script>
+            const floating_btn = document.querySelector('.floating-btn');
+            const close_btn = document.querySelector('.close-btn');
+            const social_panel_container = document.querySelector('.social-panel-container');
+
+            floating_btn.addEventListener('click', () => {
+	            social_panel_container.classList.toggle('visible')
+                });
+
+            close_btn.addEventListener('click', () => {
+	            social_panel_container.classList.remove('visible')
+                });
+        </script>
+        <nav>
+            <div><a href="index.html"><img class="logo" src ="images/download.png" alt= "logo"></a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">About Me</a></li>
+                <li><a href="courses.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="row mid">
+                <div class="box dark">
+                    <h1 class="heading">
+                        Projects
+                        <div class="hidden-big">Complete</div>
+                    </h1>
+                </div>
+                <div class="box"><h1 class="heading hidden-small">Complete</h1></div>
+                <p class="subheading">Overview</p>
+            </div>
+            <div class="row">
+                <div class="box">
+                    <span class="number">1</span>
+                    <h2 class="name hidden-small">IT Company </h2>
+                    <a href="https://lonewolflou.github.io/IT-company-Project/"><p class="movies">
+                        Template of a multiple page IT company site that can become dynamic.<br>Click for more info
+                    </p></a>
+                </div>
+                <div
+                     class="box dark image"
+                     style="background-image: url('images/it_company.png');background-size: contain;"
+                     >
+                    <h2 class="name"><span class="hidden-big">Daniel</span> Website</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div
+                     class="box dark image"
+                     style="background-image: url('images/ecommerce.png');background-size: contain;"
+                     >
+                    <h2 class="name">Apple -<span class="hidden-big"></span></h2>
+                </div>
+                <div class="box">
+                    <span class="number">2</span>
+                    <h2 class="name hidden-small"> eCommerce page </h2>
+                    <a href="https://lonewolflou.github.io/Apple-eCommerce/"><p class="movies">
+                        A single page layout for an e-commerce site using javascript.<br>Click for more info
+                    </p></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="box">
+                    <span class="number">3</span>
+                    <h2 class="name hidden-small">Restuarant</h2>
+                    <a href="https://lonewolflou.github.io/restaurant---project/"><p class="movies">
+                        Multi page website for a Restuarant that can become dynamic.<br>Click for more info
+                    </p></a>
+                </div>
+                <div
+                     class="box dark image"
+                     style="background-image: url('images/clove.png');background-size: contain;"
+                     >
+                    <h2 class="name"><span class="hidden-big">Restuarant</span> Website</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div
+                     class="box dark image"
+                     style="background-image: url('images/creative.png');background-size: contain;"
+                     >
+                    <h2 class="name">Creative Page<span class="hidden-big"></span></h2>
+                </div>
+                <div class="box">
+                    <span class="number">4</span>
+                    <h2 class="name hidden-small"></h2>
+                    <a href="https://lonewolflou.github.io/Creative-design/"><p class="movies">
+                        Single page layout where i test out different designs using javascript.<br>Click for more info
+                    </p></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="box">
+                    <span class="number">5</span>
+                    <h2 class="name hidden-small">Training</h2>
+                    <a href="https://lonewolflou.github.io/Company-site-project/"><p class="movies">
+                        Template multi page website of a training company.<br>Click for more info
+                    </p></a>
+                </div>
+                <div
+                     class="box dark image"
+                     style="background-image: url('images/training.png');background-size: contain;"
+                     >
+                    <h2 class="name"><span class="hidden-big">Training</span>Academy</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div
+                     class="box dark image"
+                     style="background-image: url('images/paypal.png');background-size: contain;"
+                     >
+                    <h2 class="name">Paypal <span class="hidden-big">Clone</span></h2>
+                </div>
+                <div class="box">
+                    <span class="number">6</span>
+                    <h2 class="name hidden-small">Clone</h2>
+                    <a href="https://lonewolflou.github.io/Paypal-Clone/"><p class="movies">
+                        Clone for a Paypal type site using javascript.<br>Click for more info
+                    </p></a>
+                </div>
+            </div>
+            <div class="row small">
+                <div class="box"></div>
+                <div class="box dark"></div>
+                <p class="subheading">More projects to be added</p>
+            </div>
+        </div>
+        <div class="bottom-container">
+            <a class="footer-link" href="https://www.linkedin.com/in/louvelle-morris-120112212/">LinkedIn</a>
+            <a class="footer-link" href="https://github.com/LoneWolfLou">Github</a>
+            <p class="copyright">© 2023 Louvelle Morris.</p>
+            </div>      
+    </body>
+</html>

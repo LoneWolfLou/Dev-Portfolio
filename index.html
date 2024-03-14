@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        $(document).ready(function(){
+  $('.testimonials').bxSlider({
+    auto: true,
+    pause: 8000, //time on each review
+    mode: 'fade', // or slide
+    infiniteLoop: true,
+    controls: false, // true for arrows
+    slideMargin: 0
+  });
+});
+      </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Louvelle's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cormorant:wght@300&family=Courgette&family=Lora:ital@0;1&family=Merriweather&family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <script>
+        
+const floating_btn = document.querySelector('.floating-btn');
+const close_btn = document.querySelector('.close-btn');
+const social_panel_container = document.querySelector('.social-panel-container');
+
+floating_btn.addEventListener('click', () => {
+	social_panel_container.classList.toggle('visible')
+});
+
+close_btn.addEventListener('click', () => {
+	social_panel_container.classList.remove('visible')
+});
+    </script>
+    <header>
+        
+        <nav>
+            <div><img class="logo" src ="images/download.png" alt= "logo"></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">About Me</a></li>
+                <li><a href="courses.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    
+
+        <div class="half">
+            <h1>Hi I'm Louvelle Morris a: <div class="roller">
+                <span id="rolltext">Web developer<br/>
+                  Software engineer<br/>
+                  Freelancer
+                
+                </div></h1>
+                <br>
+            <p>I enjoy building everything from small business sites to rich web apps.
+                If you are a business seeking a web presence or an employer looking to hire, reach out here.</p>
+            <a href="contact.html"><button>Contact me</button></a>
+        </div>
+        <div class="bottom-container">
+            <a class="footer-link" href="https://www.linkedin.com/in/louvelle-morris-120112212/">LinkedIn</a>
+            <a class="footer-link" href="https://github.com/LoneWolfLou">Github</a>
+            <p class="copyright">© 2023 Louvelle Morris.</p>
+            </div>
+    </header>
+
+    
+</body>
+
+</html>
